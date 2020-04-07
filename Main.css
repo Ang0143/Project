@@ -1,0 +1,129 @@
+@media(max-width: 1024px) {
+  html {
+    font-size: 12px;
+	}
+}
+
+@media(max-width: 1200px) {
+  html {
+    font-size: 14px;
+	}
+}
+
+@media(max-width: 900px) {
+  html {
+    font-size: 10px;	
+	}
+}
+
+body{
+	margin: 0%;
+	font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+#header{
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: black;
+	height: 3.5rem;
+	width: 100%;
+	margin: 0%;
+	justify-content: space-around;
+	display: flex;
+	font-size: 1.23rem;
+	align-items: center;
+	color: white;
+}
+
+#content{
+	position: absolute;
+	width: 100%;
+	background-color: rgb(84, 84, 78);
+}
+
+.ntro{
+	display: flex;
+	justify-content: flex-start;
+	height:18.75rem;
+	border-bottom: solid;
+	border-color: white;
+}
+
+.ntro div{
+	width: 50%;
+	display: inline-flex;
+}
+.ntro div img{
+	height: 18.75rem;
+}
+
+.ntro p{
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}	
+
+#skadi{
+	font-size: 2rem;
+	color: lightblue;
+}
+#chen{
+	font-size: 2rem;
+	color: rgb(230, 46, 46);
+}
+#WWN{
+	font-size: 2rem;
+	color: rgb(237, 245, 10);
+}
+#grani{
+	font-size: 2rem;
+	color: rgb(115, 111, 179);
+}
+#AYFL{
+	font-size: 2rem;
+	color: rgb(224, 83, 47);
+}
+#YFLT{
+	font-size: 2rem;
+	color: rgb(245, 113, 37);
+}
+#Red{
+	font-size: 2rem;
+	color: rgb(161, 3, 3);
+}
+#XueChu{
+	font-size: 2rem;
+	color: white;
+}
+#Shining{
+	font-size: 2rem;
+	color: rgb(0, 0, 0);
+}
+#YeYing{
+	font-size: 2rem;
+	color: rgb(251, 255, 184);
+}
+#PLWS{
+	font-size: 2rem;
+	color: rgb(184, 90, 191);
+}
+#Grey{
+	font-size: 2rem;
+	color: rgb(173, 176, 179);
+}
+#Nian{
+	font-size: 2rem;
+	color: rgb(255, 0, 81);
+}
+#Liskarm{
+	font-size: 2rem;
+	color: rgb(56, 8, 161);
+}
+#JieGe{
+	font-size: 2rem;
+	color: rgb(247, 198, 17);
+}
+#Snow{
+	font-size: 2rem;
+	color: rgb(228, 245, 243);
+}
