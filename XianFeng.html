@@ -1,50 +1,801 @@
 <!DOCTYPE html>
-<html style="height: 100%; width: 100%;">
+<html style="height: 100% ;width: 100%;">
 <head>
 	<title>霜月暗夜的先锋干员</title>
-	<link rel="stylesheet" type="text/css" href="Main.css">
-	<link rel="icon" type="image/png" href="./Image/MRFZLOGO.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./Image/MRFZLOGO.png" sizes="16x16" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="./Image/Melee.jpg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./Image/Melee.jpg" sizes="16x16" />
 </head>
-
-<body style="height: 100%; width: 100%;">
-	<div id="header">
-		<div id="category">
-			<form>
-				<p>干员职业分类
-					<select id="select" onchange="window.location=this.value">
+<body style="height: 100%; width: 100%; margin: 0%;font-family: normal 100% Helvetica, Arial, sans-serif;">
+	<div id="header" style="position: -webkit-sticky;position: sticky;background-color: black;height: 3.5rem;width: 100%;margin: 0%;justify-content: space-around;display: flex;font-size: 1.23rem;align-items: center;color: white;">
+	<div id="category">
+		<form>
+			<p>干员职业分类
+				<select id="select" onchange="window.location=this.value">
 						<option value="XianFeng.html" selected="">先锋</option>
 						<option value="JinWei.html">近卫</option>
 						<option value="ShuShi.html">术士</option>
 						<option value="YiLiao.html">医疗</option>
 						<option value="JuJi.html">狙击</option>
 						<option value="ZhongZhuang.html">重装</option>
-					</select>
-				</p>
-			</form>
-		</div>
+						<option value="TeZhong.html">特种</option>
+						<option value="FuZhu.html">辅助</option>
+						<option value="TeShu.html">特殊</option>
+				</select>
+			</p>
+		</form>
+	</div>
 			
 		<div style="height: 100%;">
 			<a href="Main.html">
 			<img src="./Image/logo.jpg" style="height: 100%;"></a>
 		</div>
 
-		<div id="Search">
+		<div id="Search" style="display: flex;">
 			<form>
 				<label for="Search">特定干员搜索</label>
 				<input type="text" name="Search" value="" id="searchinput">
 			</form>
+			<div style="margin-left: 0.0625rem;margin-top: 0.1rem;border: 0.0625rem solid white;background-color: blue;cursor: pointer;" id="submit">提交</div>
 		</div>
 	</div>
 
-	<div style="height: 100%; width: 100%; background-color: lightblue;">
-		<div style="height: 100%; width: 100%;">
-			<div style="height: 100%; width: 50%; background-color: black;">
-				
+	<div style="height: 5%; width: 100%;display: flex;">
+		<div style="height: 95%; width:10%;text-align: left;font-weight: bold;font-size: 1.25rem;cursor:pointer;border: 0.125rem solid grey;" id="button1">初始</div>
+		<div style="height: 95%; width:10%;text-align: left;font-weight: bold;font-size: 1.25rem;cursor:pointer;border: 0.125rem solid grey;border-left: none;" id="button2">精英二</div>
+	</div>
+
+	<div id="tab" style="height: 100%; width: 100%; display: flex; flex-direction: column; font-family: normal 100% Helvetica, Arial, sans-serif;">
+		<div style="height: 33.33333333%; width: 100%; display: flex; flex-direction: row; justify-content:flex-start;border-bottom: 0.375rem solid black;">
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/WWN.png" style="height: 100%; width: 33%;" id="WWNImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">推进之王</th>
+							<th style="border-bottom:0.1rem solid black; color:rgb(255	140	0);text-align: left;"><span style="color: black;">Siege</span><br>★★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										911/2251
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										212/515/600
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										154/384/409
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										12/14
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										中等 1.05秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/FengDi.png" style="height: 100%; width: 33%;" id="FengDiImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">风笛</th>
+							<th style="border-bottom:0.1rem solid black; color:rgb(255	140	0);text-align: left;"><span style="color: black;">Bagpipe</span><br>★★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										975/2484
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										250/586/696
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										173/382
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										11/13
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										快 1.0秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div style="height: 33.33333333%; width: 100%; display: flex; flex-direction: row; justify-content:space-between;border-bottom: 0.375rem solid black">
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/GeLaNi.png" style="height: 100%; width: 33%;" id="GeLaNiImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">格拉尼</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(247, 245, 124);text-align: left;"><span style="color: black;">Grani</span><br>★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										877/2235
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										235/552
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										166/367/437
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										12/14
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										快 1.0秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/DKSS.png" style="height: 100%; width: 33%;" id="DKSSImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">德克萨斯</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(247, 245, 124);text-align: left;"><span style="color: black;">Texas</span><br>★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										727/1950
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										202/500/594
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										139/343
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										11/13
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										中等 1.05秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/LinDon.png" style="height: 100%; width: 33%;" id="LinDonImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">凛冬</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(247, 245, 124);text-align: left;"><span style="color: black;">Зима/Zima</span><br>★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										812/2150
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										183/470
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										147/350/444
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										11/13
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										中等 1.05秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/WeiCao.png" style="height: 100%; width: 33%;" id="WeiCaoImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">苇草</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(247, 245, 124);text-align: left;"><span style="color: black;">Reed</span><br>★★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										870/2215
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										240/562/557
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										164/364
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										10/12
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										快 1.0秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div style="height: 33.33333333%; width: 100%; display: flex; flex-direction: row; justify-content:space-between;border-bottom: 0.375rem solid black">
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/QDF.png" style="height: 100%; width: 33%;" id="QDFImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">清道夫</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(140, 111, 191);text-align: left;"><span style="color: black;">Scavenger</span><br>★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										693/1835
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										185/470/555
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										136/310
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										10/12
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										中等 1.05秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/TJN.png" style="height: 100%; width: 33%;" id="TJNImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">桃金娘</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(140, 111, 191);text-align: left;"><span style="color: black;">Myrtle</span><br>★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										658/1565
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										231/520
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										138/300/372
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										8/10
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										较慢 1.3秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/XunShi.png" style="height: 100%; width: 33%;" id="XunShiImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">讯使</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(140, 111, 191);text-align: left;"><span style="color: black;">Courier</span><br>★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										758/1985
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										170/435
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										137/322/425
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										10/12
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										中等 1.05秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div style="height: 100%; width: 25% ; display: flex;">
+				<img src="./Image2/HongDou.png" style="height: 100%; width: 33%;" id="HongDouImg">
+				<div style="height: 100%; width: 67.25%; word-wrap:break-word; display:flex; justify-content: center; align-items: center;">
+					<table style="width: 85%; height: 90%; border: 0.125rem solid black; border-collapse: collapse;">
+						<tr style="height: 20%; ">
+							<th style="font-size: 1.75rem; text-align: left;border-bottom:0.1rem solid black; ">红豆</th>
+							<th style="border-bottom:0.1rem solid black; color: rgb(140, 111, 191);text-align: left;"><span style="color: black;">Vigna</span><br>★★★★</th>
+						</tr>
+						<tr style="vertical-align: top;">
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li style="font-size: 1.125rem;">
+										生命上限
+									</li>
+									<li>
+										724/1845
+									</li>
+								</ul>
+							</td>
+							<td>
+								<ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击
+									</li>
+									<li>
+										248/582/666
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										防御
+									</li>
+									<li>
+										152/351
+									</li>
+								</ul></td>
+							<td ><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										法术抗性
+									</li>
+									<li>
+										0/0
+									</li>
+								</ul></td>
+						</tr>
+						<tr style="vertical-align: bottom;">
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										部署费用
+									</li>
+									<li>
+										9/11
+									</li>
+								</ul></td>
+							<td><ul style="list-style: none; margin: 0; padding: 0;">
+									<li  style="font-size: 1.125rem;">
+										攻击速度
+									</li>
+									<li>
+										快 1.0秒
+									</li>
+								</ul></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
 
 </body>
+
+<script type="text/javascript">
+	document.getElementById('submit').onclick = function(){submit()};
+	function submit(){
+		alert("功能未开发，不要再点了");
+	}
+
+	document.getElementById('button1').onclick = function(){ImgChange1()};
+	document.getElementById('button2').onclick = function(){ImgChange2()};
+	var WWNImg = document.getElementById('WWNImg');
+	var FengDiImg = document.getElementById('FengDiImg');
+	var GeLaNiImg = document.getElementById('GeLaNiImg');
+	var DKSSImg = document.getElementById('DKSSImg');
+	var LinDonImg = document.getElementById('LinDonImg');
+	var WeiCaoImg = document.getElementById('WeiCaoImg');
+	var QDFImg = document.getElementById('QDFImg');
+	var TJNImg = document.getElementById('TJNImg');
+	var XunShiImg = document.getElementById('XunShiImg');
+	var HongDouImg = document.getElementById('HongDouImg');
+	var TF = true;
+
+	function ImgChange1(){
+	if(TF){
+		WWNImg.src = './Image2/WWN.png';
+		FengDiImg.src = './Image2/FengDi.png';
+		GeLaNiImg.src = './Image2/GeLaNi.png';
+		DKSSImg.src = './Image2/DKSS.png';
+		LinDonImg.src = './Image2/LinDon.png';
+		WeiCaoImg.src = './Image2/WeiCao.png';
+		QDFImg.src = './Image2/QDF.png';
+		TJNImg.src = './Image2/TJN.png';
+		XunShiImg.src = './Image2/XunShi.png';
+		HongDouImg.src = './Image2/HongDou.png';
+		}
+	}
+	function ImgChange2(){
+	if(TF){
+		WWNImg.src = './Image2/WWN2.png';
+		FengDiImg.src = './Image2/FengDi2.png';
+		GeLaNiImg.src = './Image2/GeLaNi2.png';
+		DKSSImg.src = './Image2/DKSS2.png';
+		LinDonImg.src = './Image2/LinDon2.png';
+		WeiCaoImg.src = './Image2/WeiCao2.png';
+		QDFImg.src = './Image2/QDF2.png';
+		TJNImg.src = './Image2/TJN2.png';
+		XunShiImg.src = './Image2/XunShi2.png';
+		HongDouImg.src = './Image2/HongDou2.png';
+		}
+	}
+	
+</script>
 </html>

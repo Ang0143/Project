@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+	<title>霜月暗夜的干员</title>
+	<link rel="icon" type="image/png" href="./Image/MRFZLOGO.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./Image/MRFZLOGO.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body style="height: 100%; width: 100%;margin: 0%;font-family: normal 100% Helvetica, Arial, sans-serif;">
+	<div id="header" style="position: -webkit-sticky;position: sticky;background-color: black;height: 3.5rem;width: 100%;margin: 0%;justify-content: space-around;display: flex;font-size: 1.23rem;align-items: center;color: white;">
+		<div id="category">
+			<form>
+				<p>干员职业分类
+					<select id="select" onchange="window.location=this.value">
+						<option value="XianFeng.html">先锋</option>
+						<option value="JinWei.html">近卫</option>
+						<option value="ShuShi.html">术士</option>
+						<option value="YiLiao.html">医疗</option>
+						<option value="JuJi.html">狙击</option>
+						<option value="ZhongZhuang.html">重装</option>
+						<option value="TeZhong.html" selected="">特种</option>
+						<option value="FuZhu.html">辅助</option>
+						<option value="TeShu.html">特殊</option>
+					</select>
+				</p>
+			</form>
+		</div>
+			
+		<div style="height: 100%;">
+			<a href="Main.html">
+			<img src="./Image/logo.jpg" style="height: 100%;"></a>
+		</div>
+
+		<div id="Search" style="display: flex;">
+			<form>
+				<label for="Search">特定干员搜索</label>
+				<input type="text" name="Search" value="" id="searchinput">
+			</form>
+			<div style="margin-left: 0.0625rem;margin-top: 0.1rem;border: 0.0625rem solid white;background-color: blue;cursor: pointer;" id="submit">提交</div>
+		</div>
+	</div>
+	<div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+		<h2>由于版主过于懒惰，所以此类干员界面尚未被编辑</h2>
+		<img src="heibai.gif" style="height: 25%; width: 25%;">
+	</div>
+</body>
+<script type="text/javascript">
+	document.getElementById('submit').onclick = function(){submit()};
+function submit(){
+	alert("功能未开发，不要再点了");
+}
+</script>
+</html>
